@@ -1,0 +1,6 @@
+User-agent: *
+
+
+Disallow: /http://holidayfloridas.co.uk/admin 
+
+Sitemap: http://holidayfloridas.co.uk/sitemap.xml
