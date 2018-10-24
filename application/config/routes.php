@@ -1,6 +1,6 @@
 <?php 
 defined('BASEPATH') OR exit('No direct script access allowed');
-$route['default_controller'] = 'hotel/manufacture/$1';
+$route[''] = 'hotel/manufacture/$1';
 $route['manufacture'] = 'hotel/manufacture/$1';
 $route['model'] = 'hotel/do_upload/$1';
 $route['cars'] = 'hotel/cars/$1';

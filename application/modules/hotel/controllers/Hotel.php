@@ -9,12 +9,13 @@ class hotel extends CI_Controller {
 
 	
 
-
+/*function for uploading the manufacture*/
+	
 	function manufacture(){
 		
 		$data = array();
 		
-		$this->load->helper('form');
+		
 		 $manufacture = $this->input->post('Name');
          if($manufacture != ""){
          	$this->m_hotel->post_manufacture($manufacture);
@@ -26,7 +27,7 @@ class hotel extends CI_Controller {
 }
 
 
-	
+/*function for displaying the lists of cars*/	
 
 
 function cars(){
@@ -43,6 +44,8 @@ function cars(){
 }
 
 
+/*function for displaying the details of car*/	
+
 function details($id){
 		
 		$data = array();
@@ -57,6 +60,9 @@ function details($id){
 }
 
 
+/*sold our car*/	
+
+
 function remove($id){
 		
 		$data = array();
@@ -69,6 +75,8 @@ function remove($id){
 	
 }
 
+
+/*function for uploading the detail of car*/	
 
       public function do_upload()
         {
@@ -113,10 +121,11 @@ function remove($id){
 		 $image = $this->input->post('Image');
 		 $notes = $this->input->post('Notes');
 		 $manufact = $this->input->post('manufact');
-		$manufactures = $this->m_hotel->getmanufactures();
-		$data['manufactures'] = $manufactures;
+	
 	}
 		$image1 = $filename;
+	   $manufactures = $this->m_hotel->getmanufactures();
+		$data['manufactures'] = $manufactures;
 
 
 		

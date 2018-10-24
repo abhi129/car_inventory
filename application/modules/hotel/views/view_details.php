@@ -63,8 +63,8 @@ html {
 </head>
 <body>
 <?php $this->load->view('header');?>
-<h2>Responsive "Meet The Team" Section</h2>
-<p>Resize the browser window to see the effect.</p>
+<h2>Car Details</h2>
+<p></p>
 <br>
 <div class="col-lg-12 col-md-12">
 <div class="row">

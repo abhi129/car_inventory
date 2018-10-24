@@ -402,15 +402,7 @@ function getFieldValue($tblname,$field,$where){
 
 if(!function_exists('get_settings')){
 	function get_settings(){
-		$CI =  & get_instance();
-		$output =  $CI->db->select('*')
-				  ->from('tbl_setting')
-				  ->get();
-		$settings = array();
-		foreach($output->result_array() as $k=>$v){
-			$settings[$k] =  $v;
-		}
-		return $settings;
+		
 	}
 }
 
