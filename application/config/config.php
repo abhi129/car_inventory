@@ -24,7 +24,7 @@ date_default_timezone_set('Asia/Kolkata');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://4c42f8ec.ngrok.io/car_inventory1/';
+$config['base_url'] = 'http://192.168.0.13/car_inventory1/';
 
 /*
 |--------------------------------------------------------------------------
